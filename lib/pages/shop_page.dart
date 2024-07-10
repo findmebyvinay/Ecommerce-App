@@ -39,14 +39,37 @@ class _ShoppageState extends State<Shoppage> {
           }
         ),
         elevation: 0,
-        centerTitle:true,
-        title:Text("Sneaker Shop",
-        ),
         backgroundColor: Colors.transparent,
         
       ),
       drawer: Drawer(
         backgroundColor: Colors.black,
+        child: Column(
+          children: [
+            DrawerHeader(child: Image.asset('lib/images/logo.jpeg')),
+           const Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Divider(height:80,),
+            ),
+           const ListTile(
+              leading:Icon(Icons.home,color: Colors.white,),
+              title: Text("Home",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold
+              ),),
+            ),
+            const SizedBox(height:20,),
+             const ListTile(
+              leading:Icon(Icons.info,color: Colors.white,),
+              title: Text("About Us",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold
+              ),),
+            ),
+          ],
+        ),
       ),
       body: Column(
         children: [

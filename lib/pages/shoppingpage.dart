@@ -4,6 +4,28 @@ class Shoppingpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("shooping"),);
+    return Column(
+   children: [
+          Container(
+            padding:EdgeInsets.all(8),
+            margin:EdgeInsets.all(20),
+            
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Center(child: Text("Search")),
+                Icon(Icons.search),
+              ],
+            ),
+          ),
+          Text("Hot Picks 🔥"),
+         
+        ],
+    );
   }
 }

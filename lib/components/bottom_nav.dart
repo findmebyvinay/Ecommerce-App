@@ -10,7 +10,7 @@ class MyButton extends StatelessWidget {
     return Container(
       child: GNav(
         mainAxisAlignment: MainAxisAlignment.center,
-        color: Colors.grey,
+        color: Colors.white,
         activeColor: Colors.black,
         tabBorderRadius: 1,
         onTabChange:(value)=>onTabChange!(value),
