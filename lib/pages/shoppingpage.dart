@@ -9,17 +9,18 @@ class Shoppingpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-       
+         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
          children: [
+        
             Container(
               
-              width: 400,
-              height: 500,
+              width: 800,
+             height: 450,
               padding:EdgeInsets.all(8),
               margin:EdgeInsets.all(20),
               
               decoration: BoxDecoration(
-                color: Colors.transparent,
+                color: Colors.grey[300],
                 borderRadius: BorderRadius.circular(8),
 
                 
