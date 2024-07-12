@@ -2,6 +2,7 @@ import 'package:ecommerce_app/components/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 import 'cart_page.dart';
+import 'login_page.dart';
 import 'shoppingpage.dart';
 class Shoppage extends StatefulWidget {
   const Shoppage({super.key});
@@ -24,7 +25,7 @@ class _ShoppageState extends State<Shoppage> {
   final List<Widget> _pages=[
     const Shoppingpage(),
 
-    const CartPage()
+    const CartPage(),
   ];
   Widget build(BuildContext context) {
     return Scaffold(
