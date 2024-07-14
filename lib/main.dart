@@ -1,4 +1,6 @@
+import 'package:ecommerce_app/models/cart.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'pages/homepage.dart';
 
@@ -12,11 +14,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      
-      debugShowCheckedModeBanner: false,
-      title: 'Ecommerce App',
-      home: Homepage()
+    return ChangeNotifierProvider(
+      create: (context)=>Cart(),
+      builder: (context, child) =>const MaterialApp(
+        
+        debugShowCheckedModeBanner: false,
+        title: 'Ecommerce App',
+        home: Homepage()
+      ),
     );
   }
 }
