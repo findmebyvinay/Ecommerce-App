@@ -17,14 +17,36 @@ class CartPage extends StatelessWidget {
       child: Column(
      //   mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("MY CART",
+        const  Text("MY CART",
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold
           ),),
       
         const SizedBox(height: 20,),
-        Container(
+        Center(
+          child: Container(
+            color: Colors.white,
+           // height: 350,
+           // width: 450,
+            child:ElevatedButton(
+              
+              style: ButtonStyle(backgroundColor:WidgetStateColor.transparent),
+              onPressed: ()=>{
+              
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()))
+            }, child:Text("Go To Login",style: TextStyle(
+              color: Colors.white
+            ),))
+            /* ListView.builder(
+               itemCount: value.getUserCart().length,
+              itemBuilder: (context,index){
+              Shoe selectedShoe =value.getUserCart()[index];
+              return CartItem(shoe: selectedShoe);
+            }),*/
+          ),
+        )
+       /* Container(
           width: 500,
           height: 400,
 //color: Colors.black,
@@ -34,7 +56,7 @@ class CartPage extends StatelessWidget {
             Shoe selectedShoe =value.getUserCart()[index];
             return CartItem(shoe: selectedShoe);
           })),
-        )
+        )*/
       
         ],
       ),
