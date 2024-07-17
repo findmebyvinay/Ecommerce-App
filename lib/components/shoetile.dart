@@ -16,7 +16,8 @@ class ShoeTile extends StatelessWidget {
          borderRadius: BorderRadius.circular(12)
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.end,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
@@ -27,9 +28,10 @@ class ShoeTile extends StatelessWidget {
 
           const SizedBox(height: 10,),
           Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+     // mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Column(
+             //   mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(shoe.name),
                   
@@ -39,7 +41,8 @@ class ShoeTile extends StatelessWidget {
               
             ],
           ),
-          GestureDetector(
+          GestureDetector (
+            
             onTap:onTap,
             child: Container(
               
@@ -47,7 +50,7 @@ class ShoeTile extends StatelessWidget {
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.all(20),
               
-              child: Icon(Icons.add,color: Colors.white,),
+              child:Icon(Icons.add,color: Colors.white,),
               decoration: BoxDecoration(
                 color: Colors.black,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(8),bottomRight: Radius.circular(12))

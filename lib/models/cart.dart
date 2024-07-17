@@ -9,12 +9,12 @@ class Cart extends ChangeNotifier{
     name: "kyrie Infinity", 
     description:"better agility",
     price: "£300",
-    imagePath:'lib/images/Kyrie.jpeg'),
+    imagePath:'lib/images/kyrie.jpeg'),
      Shoe(
     name: "Kai Anta", 
     description:"better design",
     price: "£200",
-    imagePath:'lib/images/Kai.jpeg'),
+    imagePath:'lib/images/kai.jpeg'),
      Shoe(
     name: "nike KD 13", 
     description:"better for ankles",
@@ -32,6 +32,7 @@ class Cart extends ChangeNotifier{
 
   List<Shoe> getShoeList(){
   return Shop;
+  notifyListeners();
   }
 
   List<Shoe> getUserCart(){

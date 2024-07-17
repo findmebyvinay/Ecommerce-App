@@ -30,13 +30,12 @@ class CartPage extends StatelessWidget {
            // height: 350,
            // width: 450,
             child:ElevatedButton(
-              
-              style: ButtonStyle(backgroundColor:WidgetStateColor.transparent),
+            
               onPressed: ()=>{
               
               Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()))
-            }, child:Text("Go To Login",style: TextStyle(
-              color: Colors.white
+            }, child:Text("Please Login first",style: TextStyle(
+              color: Colors.black
             ),))
             /* ListView.builder(
                itemCount: value.getUserCart().length,

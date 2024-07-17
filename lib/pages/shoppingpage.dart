@@ -52,15 +52,19 @@ class Shoppingpage extends StatelessWidget {
               
                
               Expanded(
-                child:ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 4,
-                  itemBuilder: (context,index){
-                  Shoe shoe= value.getShoeList() [index];
-                  return
-                    ShoeTile(shoe: shoe,
-                    onTap:()=>addShoeToCart(shoe),);
-                }) )
+                child:Container(
+                  height: 300,
+                  width: 400,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 4,
+                    itemBuilder: (context,index){
+                    Shoe shoe= value.getShoeList() [index];
+                    return
+                      ShoeTile(shoe: shoe,
+                      onTap:()=>addShoeToCart(shoe),);
+                  }),
+                ) )
               )
             ],
             

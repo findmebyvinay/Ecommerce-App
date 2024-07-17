@@ -12,7 +12,7 @@ class Homepage extends StatelessWidget {
       backgroundColor: Colors.grey,
      body: Column(
       children: [
-        Image.asset('lib/images/nike.png',height:400),
+        Image.asset('lib/images/nike.png',height:550,width: 600,),
       const  Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
