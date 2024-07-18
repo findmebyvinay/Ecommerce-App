@@ -19,7 +19,7 @@ class Cart extends ChangeNotifier{
     name: "nike KD 13", 
     description:"better for ankles",
     price: "£350",
-    imagePath:'lib/images/nike.png'),
+    imagePath:'lib/images/pg.jpeg'),
      Shoe(
     name: "PG 6", 
     description:"smooth performance",

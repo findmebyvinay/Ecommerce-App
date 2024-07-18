@@ -2,6 +2,7 @@ import 'package:ecommerce_app/components/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 import 'cart_page.dart';
+import 'home.dart';
 import 'login_page.dart';
 import 'shoppingpage.dart';
 class Shoppage extends StatefulWidget {
@@ -52,14 +53,19 @@ class _ShoppageState extends State<Shoppage> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Divider(height:80,),
             ),
-           const ListTile(
-              leading:Icon(Icons.home,color: Colors.white,),
-              title: Text("Home",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold
-              ),),
-            ),
+           GestureDetector(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));
+            },
+             child: const ListTile(
+                leading:Icon(Icons.home,color: Colors.white,),
+                title: Text("Home",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
+                ),),
+              ),
+           ),
             const SizedBox(height:20,),
              const ListTile(
               leading:Icon(Icons.info,color: Colors.white,),

@@ -56,7 +56,7 @@ class Shoppingpage extends StatelessWidget {
                   height: 300,
                   width: 400,
                   child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
+                    scrollDirection: Axis.vertical,
                     itemCount: 4,
                     itemBuilder: (context,index){
                     Shoe shoe= value.getShoeList() [index];
